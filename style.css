@@ -1,0 +1,102 @@
+:root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --primary-color: #287C84;
+            --secondary-color: #EB9369;
+            --third-color: #FF9C2B;
+            --neutral: #F8E9D0;    
+        }
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    /*in github pages, insert the maragsa font there and link it here since it is an external font file, not available in any font hosting websites.*/
+    /*for now, it will be utilizing the body font (which is using google fonts).*/
+    font-family: 'Plus Jakarta Sans'
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    background-color:#d9d9d9;
+    display: block;
+    width: 700px;
+    height: 70px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto 25px auto;
+}
+
+h5 {
+    margin-left: 200px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 25px;
+}
+
+.paragraph-personalinfo {
+    font-size: 16px;
+    margin-left: 250px;
+    margin-right: 200px;
+}
+
+.paragraph-last {
+    margin-bottom: 70px;
+}
+
+.list-personalinfo {
+    margin-left: 300px;
+}
+
+.list {
+    margin-left: 250px;
+}
+
+.navbar {
+            position: relative;
+            padding: 0.75rem 1rem;
+        }
+        .border-bottom {border-bottom: 1px solid var(--border-color); }
+        .border-top {border-top: 1px solid var(--border-color); }
+        .bg-1 {background-color: var(--neutral); }
+        .bg-2 {background-color: var(--primary-color);}
+
+        /*.navbar-brand is temporary to see the text. remove after replacing href with the logo image link.*/
+        .navbar-brand {
+            color: #000000;
+        }
+
+        .navbar-toggler{
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-color);
+            font-size: 0.95 rem;
+            font-weight: 400;
+            transition: color 0.2 ease;
+
+        }
+
+        .nav {
+            color: var(--text-color);
+
+        }
