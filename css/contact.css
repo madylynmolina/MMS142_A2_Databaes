@@ -99,10 +99,6 @@
 	.contact-container {
 		grid-template-column: 1fr;
 	}
-
-	.contactdetails {
-		grid-template-column: 1fr;
-	}
 }
 
 @media (prefers-reduced-motion: reduce) {
