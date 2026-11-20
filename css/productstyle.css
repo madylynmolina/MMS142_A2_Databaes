@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Maragsa Display";
-  src: url("../fonts/maragsa-display.ttf") format("truetype");
+  src: url("Maragsâ/Maragsa╠é-Display.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -44,6 +44,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
 }
+
 
 /* ---------- Navbar ---------- */
 .site-navbar {
