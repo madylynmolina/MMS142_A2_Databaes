@@ -155,7 +155,7 @@ button:focus-visible {
 
 /*Each item and grid cell for the 2x2 contact details*/
 .item {
-	background-color: var(--secondary-color);
+	background-color: var(--orange);
 	padding: 1.5rem 1rem;
 	width: 100%;
 	height: 100%;
