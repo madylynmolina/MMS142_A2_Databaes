@@ -21,20 +21,20 @@
 <body class="d-flex flex-column min-dvh-100">
  
   <!--Header navigation-->
-  <nav class="navbar md\:navbar-expand bg-1 border-bottom">
+  <nav class="navbar navbar-expand-md site-navbar border-bottom">
     <div class="container">
       <!--Replace the # with Summerset logo image-->
       <a class="navbar-brand" href="index.html" aria-label="Summerset home">
-        <img src="#" alt="Summerset">
+        <img src="images/logo-mark.svg" alt="Summerset logo – go to home page" class="brand-logo">
       </a>
-      <nav class="site-nav" aria-label="Main navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+      <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+      </div>
  
       <!-- Hamburger: shown on mobile -->
       <button class="btn-icon navbar-toggler" type="button"
@@ -100,7 +100,7 @@
   </main>
 
   <!--Footer-->
-<footer class="bg-2 border-top py-4 mt-auto">
+<footer class="site-footer border-top mt-auto">
     <div class="container d-flex flex-wrap justify-content-center align-items-center gap-2">
     <span class="mb-0">Summerset &copy; 2026</span>
     <nav aria-label="Footer">
