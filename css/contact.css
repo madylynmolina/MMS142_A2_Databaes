@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 767.98px) {
-	.contact-container {
+	.contact-column {
 		grid-template-column: 1fr;
 	}
 }
