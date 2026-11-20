@@ -85,7 +85,8 @@
 }
 
 .email-button {
-	background-color: var(--primary-color);
+	background: var(--teal);
+	color: var(--cream);
 	width: 25%;
 	place-self: center;
 }
