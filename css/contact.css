@@ -1,6 +1,6 @@
 /*Division for "Contact Information" and "Inquiry"*/
 .contact-container {
-            display: grid;
+    display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;    
 	padding-top: 1rem; 
@@ -93,4 +93,14 @@
 
 .fixed-textbox {
 	resize: none;
+}
+
+@media (max-width: 767.98px) {
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
