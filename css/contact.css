@@ -96,8 +96,9 @@
 }
 
 @media (max-width: 767.98px) {
-	.contact-column {
-		grid-template-column: 1fr;
+	.contactdetails {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 	}
 }
 
