@@ -40,7 +40,7 @@
 }
 
 body {
-  background-color: var(--cream);
+  background-color: var(--bg-color));
   color: var(--ink);
   font-family: var(--font-body);
 }
