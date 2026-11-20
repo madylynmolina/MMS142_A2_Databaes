@@ -102,7 +102,10 @@
 	.contactdetails {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
-		padding: 1em;
+	}
+
+	.item {
+		padding: 2em;
 	}
 }
 
