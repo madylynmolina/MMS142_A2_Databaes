@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Maragsa Display";
-  src: url("summerset_homepage/fonts/maragsa-display.ttf") format("truetype");
+  src: url("../summerset_homepage/fonts/maragsa-display.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("summerset_homepage/fonts/plus-jakarta-sans.ttf") format("truetype");
+  src: url("../summerset_homepage/fonts/plus-jakarta-sans.ttf") format("truetype");
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
