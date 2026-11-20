@@ -99,9 +99,6 @@
 	.contact-container {
 		grid-template-columns: 1fr;
 	}
-	.contact-column {
-		flex-direction: row;
-	}
 	.contactdetails {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
