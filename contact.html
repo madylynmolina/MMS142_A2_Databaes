@@ -22,29 +22,30 @@
 <body class="d-flex flex-column min-vh-100">
 
 <!--Header Navigation Bar-->
-<nav class="navbar md:navbar-expand bg-1 border-bottom">
-    <div class="container d-flex justify-content-between align-items-center">
-        <!--Insert Summerset Logo online photo link in #-->
-        <a class="navbar-brand" href="#" aria-label="Summerset Webpage Home">Summerset</a>
-        <!--Set Hamburger menu on right side on Mobile-->
-        <button class="btn-icon navbar-toggler ms-auto md:hidden" type="button"
-            data-bs-toggle="drawer" data-bs-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class ="navbar-toggler-icon" aria-hidden="true"></span>
+ <header>
+    <nav class="navbar navbar-expand-md site-navbar" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-mark.svg" alt="Summerset logo – go to home page" class="brand-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <!--Navigation Menu in desktop, insert appropriate links in #-->
-            <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
-                <div class="drawer-body">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Shop </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html"> Contact </a></li>
-                    </ul>
-                </div>
-            </dialog>
-    </div>
-</nav>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-md-4 gap-md-3">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 	<!--Contact Page-->
 	<div class="contact-container">
