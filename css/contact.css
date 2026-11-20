@@ -130,7 +130,7 @@ button:focus-visible {
 
 /*Exact styling for "Contact Information" and "Inquiry"*/
 .contact-column {
-	background-color: var(--beige);
+	background-color: var(--cream);
 	padding-top: 0;
 	display: flex;
 	flex-direction: column;
