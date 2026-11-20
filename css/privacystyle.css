@@ -1,20 +1,3 @@
-:root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --primary-color: #287C84;
-            --secondary-color: #EB9369;
-            --third-color: #FF9C2B;
-            --neutral: #F8E9D0;    
-        }
-body {
-    background-color: var(--bg-color);
-    margin: 0;
-    /*in github pages, insert the maragsa font there and link it here since it is an external font file, not available in any font hosting websites.*/
-    /*for now, it will be utilizing the body font (which is using google fonts).*/
-    font-family: 'Plus Jakarta Sans'
-    
-}
-
 h1 {
     text-align: center;
     margin-top: 50px;
