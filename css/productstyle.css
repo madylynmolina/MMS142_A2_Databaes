@@ -21,17 +21,22 @@
 }
 
 :root {
-  --teal: #287c84;
-  --teal-dark: #1d5c62;
-  --coral: #eb9369;
-  --orange: #ff9c2b;
-  --cream: #f8e9d0;
-  --ink: #1a1a1a;
+  --bg-color: #f8e9d0;
+  --text-color: #1a1a1a;
+  --primary-color: #287c84;
+  --secondary-color: #ff9c2b;
+  --third-color: #eb9369;
+  --neutral: #f8e9d0;
 
   --font-heading: "Maragsa Display", Georgia, serif;
   --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
 
 /* ---------- Navbar ---------- */
 .site-navbar {
