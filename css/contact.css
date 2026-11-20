@@ -32,9 +32,8 @@
 /*2x2 grid to display "Email", "Phone", "Location", and "Work Hours"*/
 .contactdetails {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, minmax(0, 1fr)); 
 	gap: 1rem;
-	grid-template-rows: 1fr 1fr;
 	padding: 2rem;
 	text-align: center;
 	flex: 1;
@@ -61,6 +60,11 @@
 .item h2,
 .item p {
 	margin: 0;
+}
+
+.item p {
+	margin: 0;
+	overflow-wrap: anywhere;
 }
 
 /*So all grid items are equal*/
