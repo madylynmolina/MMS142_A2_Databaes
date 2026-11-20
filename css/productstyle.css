@@ -21,12 +21,19 @@
 }
 
 :root {
-  --bg-color: #f8e9d0;
-  --text-color: #1a1a1a;
-  --primary-color: #287c84;
-  --secondary-color: #ff9c2b;
-  --third-color: #eb9369;
-  --neutral: #f8e9d0;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #287C84;
+  --secondary-color: #EB9369;
+  --third-color: #FF9C2B;
+  --neutral: #F8E9D0;    
+   
+  --teal: #287c84;
+  --teal-dark: #1d5c62;
+  --coral: #eb9369;
+  --orange: #ff9c2b;
+  --cream: #f8e9d0;
+  --ink: #1a1a1a;
 
   --font-heading: "Maragsa Display", Georgia, serif;
   --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
