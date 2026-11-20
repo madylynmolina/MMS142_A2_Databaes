@@ -1,114 +1,58 @@
-:root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --primary-color: #287C84;
-            --secondary-color: #EB9369;
-            --third-color: #FF9C2B;
-            --neutral: #F8E9D0;    
-        }
+/* ==========================================================
+   Summerset – custom styles (loaded after Bootstrap)
+   Brand kit: Primary #287C84 | Secondary #EB9369, #FF9C2B | Neutral #F8E9D0
+   Fonts: Maragsa Display (headings) | Plus Jakarta Sans (body)
+   ========================================================== */
 
-html,
-body {
-    min-height: 100%;
-}
-
-body {
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    margin: 0;
-    /*in github pages, insert the maragsa font there and link it here since it is an external font file, not available in any font hosting websites.*/
-    /*for now, it will be utilizing the body font (which is using google fonts).*/
-    display: flex;
-    flex-direction: column;
-    color: var(--text-color);
-    font-family: "Plus Jakarta Sans", sans-serif;
-    
-}
-
-/* i just put the maragsa font here for testing . */
 @font-face {
-    font-family: "Maragsa Display";
-    src: url("Maragsa%CC%82/Maragsa%E2%95%A0%C3%A9-Display.woff2") format("woff2");
-    font-display: swap;
+  font-family: "Maragsa Display";
+  src: url("../fonts/maragsa-display.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/plus-jakarta-sans.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --teal: #287c84;
+  --teal-dark: #1d5c62;
+  --coral: #eb9369;
+  --orange: #ff9c2b;
+  --cream: #f8e9d0;
+  --ink: #1a1a1a;
+
+  --font-heading: "Maragsa Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 
-/* header navigation */
-.navbar {
-            position: relative;
-            height: 95px;
-            flex: 0 0 95px;
-            padding: 0 2rem;
+/* ---------- Navbar ---------- */
+.site-navbar {
+  background: var(--cream);
+  min-height: 95px;
 }
-       
-        .border-bottom {border-bottom: 1px solid var(--border-color); }
-        .border-top {border-top: 1px solid var(--border-color); }
-        .bg-1 {background-color: var(--neutral); }
-        .bg-2 {background-color: var(--primary-color);}
+.brand-logo { height: 80px; width: auto; }
 
-        .drawer-body{
-            background-color: var(--bg-color);
-        }
-
-        .drawer-header{
-            background-color: var(--primary-color);
-        }
-
-        .navbar-brand {
-            flex: 0 0 auto;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar-brand img {
-            display: block;
-            width: 80px;
-            height: 75px;
-            object-fit: contain;
-        }
-
-        .navbar-toggler {
-            fill: #F8E9D0;
-            display: none;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            width: min(1250px, calc(100% - 64px));
-            max-width: none;
-            height: 100%;
-            margin: 0 auto;
-            padding: 0;
-            gap: 48px;
-        }
-
-        .navbar-nav .nav-link {
-            color: var(--text-color);
-            font-size: 0.95 rem;
-            font-weight: 400;
-            transition: color 0.2 ease;
-
-        }
-
-        .nav {
-            color: var(--text-color);
-
-        }
-
-/* heading navigation text. */
-.site-nav {
-    flex: 1;
+.site-navbar .nav-link {
+  font-size: 1.5rem;
+  color: #000;
+  padding: .75rem 1rem;          /* large tap target */
+  border-bottom: 3px solid transparent;
 }
-
-.site-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: var(--teal-dark);
+  border-bottom-color: var(--teal);  /* not colour alone */
 }
+.navbar-toggler { border-color: var(--teal); }
+.navbar-toggler:focus { box-shadow: 0 0 0 3px var(--teal); }
 
 .site-nav a {
     color: var(--text-color);
@@ -269,81 +213,20 @@ main.container > .row > [class~="md:col-5"] {
     font-size: 1.125rem;
 }
 
-/* footer */
-footer.bg-2 {
-    min-height: 100px;
-    flex: 0 0 100px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color);
-    color: #ffffff;
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--teal);
+  color: var(--cream);
+  padding: 3rem 0;
+  font-size: 1.125rem;
 }
-
-footer.bg-2 > .container {
-    width: auto;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    gap: 8px;
-}
-
-footer.bg-2 .nav-link {
-    color: inherit;
-}
+.site-footer a { color: var(--cream); text-decoration: underline; }
+.site-footer a:hover { color: #fff; }
+.site-footer a:focus-visible { outline-color: var(--cream); box-shadow: none; }
 
 @media (max-width: 900px) {
-    .navbar {
-        height: auto;
-        min-height: 76px;
-        flex-basis: auto;
-    }
-
-    .navbar .container {
-        width: calc(100% - 32px);
-        min-height: 76px;
-        gap: 20px;
-    }
-
-    .navbar-brand img {
-        width: 64px;
-        height: 60px;
-    }
-
-    .site-nav {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: inline-flex;
-        margin-left: auto;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--primary-color);
-        border-radius: 0;
-        background: transparent;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.5em;
-        height: 1.5em;
-        background:
-            linear-gradient(var(--primary-color), var(--primary-color)) top / 100% 2px,
-            linear-gradient(var(--primary-color), var(--primary-color)) center / 100% 2px,
-            linear-gradient(var(--primary-color), var(--primary-color)) bottom / 100% 2px;
-        background-repeat: no-repeat;
-    }
-
-    .site-nav ul {
-        justify-content: space-between;
-        gap: 8px;
-    }
-
-    .site-nav a {
-        font-size: 0.9rem;
-    }
+    .brand-logo { height: 64px; }
+    .site-navbar .nav-link { font-size: 1.25rem; }
 
     main.container {
         width: min(500px, calc(100% - 40px));
