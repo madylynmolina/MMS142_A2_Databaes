@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 767.98px) {
+	.contact-column {
+		flex-direction: row;
+	}
 	.contactdetails {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
